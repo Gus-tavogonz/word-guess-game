@@ -1,0 +1,17 @@
+
+
+.hero-image{
+    background-image:url("../images/hero-image.jpg");
+	background-size: cover;
+	height: 600px;
+	background-color:;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+ }
+
+ .middle{
+    width: 90%;
+    text-align: center;
+}
