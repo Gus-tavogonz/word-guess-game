@@ -29,7 +29,7 @@ for(var i = 0; i < randomValue.length - 1; i++){
 document.getElementById("word-blank").textContent = underScore.join(" ");
 
 //Remaining letters in array
-var remainingLetters = randomValue.length;
+
 
 
 
@@ -40,14 +40,23 @@ document.onkeyup = function(){
     for(var j = 0; j < randomValue.length; j++) {
         if (randomValue[j] == userGuess){
             answerArray[j] = userGuess;
-            remainingLetters++;
-        }
+            
+        } 
+        
         var el = document.getElementById("word-blank");
         el.innerHTML = answerArray.join(" ");
         }
        
-  
+    
+
 }
+document.getElementById("guesses-left").textContent = guessesLeft;
+document.getElementById("wins-space").textContent = wins;
+document.getElementById("loss-space").textContent = loss;
+if(userGuess != randomValue[i]){
+    guessesLeft--;
+}
+
 
 
 function gameStart(){
@@ -55,9 +64,7 @@ function gameStart(){
 
 
 
-        {
-           
-            }
+       
         } 
     }
 
