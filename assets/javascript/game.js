@@ -1,5 +1,5 @@
 
-var wordBank = ["pulpfiction", "django", "ingloriousbasterds", "true-love", "killbill"];
+var wordBank = ["pulpfiction", "django", "ingloriousbasterds", "truelove", "killbill"];
 var wins = 0;
 var loss = 0;
 var wrongLetter = [];
